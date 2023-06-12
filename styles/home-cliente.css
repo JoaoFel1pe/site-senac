@@ -61,6 +61,7 @@ body {
 .relate {
     margin-left: 3%;
     width: 100%;
+    display: flex;
 }
 
 .texto-relate{
@@ -68,5 +69,17 @@ body {
     color: var(--cor-escura);
     font-weight: bold;
     opacity: 80%;
+}
+
+.botao-relate {
+    margin-left: 5%;
+    padding: 2vw;
+    background-color: rgba(255, 60, 6, .9);
+    border-radius: 10px;
+    color: var(--cor-clara);
+    font-weight: 800;
+    border: none;
+    text-align: center;
+    font-size: 3vh;
 }
   
