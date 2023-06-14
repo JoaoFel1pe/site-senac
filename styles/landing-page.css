@@ -1,0 +1,23 @@
+.corpo {
+    width: 80vw;
+    margin-left: 3%;
+}
+.mensagem {
+    display: block;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-top: 5%;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.welcome {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.intro {
+    margin-top: 3%;
+    margin-right: 5%;
+    font-size: 30px;
+    opacity: 80%;
+}

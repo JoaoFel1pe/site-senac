@@ -4,20 +4,21 @@
 }
 
 :root {
-    --cor-clara: #F8F8E4;
-    --cor-escura: #2D1D1D;
-    --laranja: #FF3C06;
+    --background: #0c2445;
+    --fonte: white;
+    --roxo-claro: #bb6cff;
+    --roxo-escuro: #af53ff;
 }
 
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: Open-sans, sans-serif;
 }
 
 body {
     height: 100vh;
-    background-color: var(--cor-clara);
+    background-color: var(--background);
 }
 
 header {
@@ -25,18 +26,19 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 3%;
+    margin-left: 3%;
+    margin-top: 1%;
 }
 
 a {
     text-decoration: none;
-    color: var(--laranja);
+    color: var(--fonte);
     
 }
 
 .brand {
     width: fit-content;
-    color: var(--laranja);
+    color: var(--fonte);
     font-weight: bold;
     font-size: 5vh;
     width: fit-content;
@@ -51,13 +53,13 @@ a {
 }
 
 .links {
-    columns: var(--laranja);
+    columns: var(--roxo-claro);
     width: 50%;
     font-size: 2vh;
     display: flex;
     font-weight: bold;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     
 }
 
@@ -74,10 +76,6 @@ a {
     transform: scale(1.05);
   }
   
-.marrom {
-    color: var(--cor-escura);
-}
-
 .Btn {
     display: flex;
     align-items: center;
@@ -91,7 +89,7 @@ a {
     overflow: hidden;
     transition-duration: .3s;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
-    background-color: rgb(255, 65, 65);
+    background-color: var(--roxo-escuro);
   }
   
   /* plus sign */
@@ -108,7 +106,7 @@ a {
   }
   
   .sign svg path {
-    fill: white;
+    fill: var(--fonte);
   }
   /* text */
   .text {
@@ -116,7 +114,7 @@ a {
     right: 0%;
     width: 0%;
     opacity: 0;
-    color: white;
+    color: var(--fonte);
     font-size: 1.2em;
     font-weight: 600;
     transition-duration: .3s;
