@@ -13,7 +13,11 @@
 * {
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
     font-family: Open-sans, sans-serif;
+=======
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;;
+>>>>>>> dc50d2cb6cdfd828d1dd2d5ae15399af5cb8f0b7
 }
 
 body {
