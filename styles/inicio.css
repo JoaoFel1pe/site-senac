@@ -1,0 +1,144 @@
+/* inicio.css */
+
+.content {
+    margin: 3% 5%;
+}
+
+.block {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.left-block {
+    flex: 1;
+    max-width: 800px;
+    padding-right: 20px;
+}
+
+.left-block h2 {
+    font-size: 50px;
+    color: var(--roxo-claro);
+    text-shadow: 2px 2px 2px rgba(242, 2, 250, 0.2);
+    
+}
+
+.left-block p {
+    font-size: 25px;
+    width: 90%;
+}
+
+.right-block {
+    display: flex;
+    align-items: center;
+    justify-items: start;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+  
+.tema {
+    padding: 15px;
+    background-color: var(--roxo-claro);
+    border-radius: 5px;
+    color: var(--background);
+    font-weight: bolder;
+    border: none;
+    font-size: 20px;
+    
+}
+
+.tema:hover {
+    cursor: pointer;
+    transform: scale(0.95) translateY(0%);
+    transition: all ease-in-out 0.2s;
+    background: var(--roxo-escuro);
+    color: var(--fonte);
+    
+}
+
+.button-container {
+    background-color: var(--roxo-escuro);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.centered-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.centered-block h2 {
+    font-size: 35px;
+    color: var(--roxo-claro);
+    text-shadow: 2px 2px 2px rgba(242, 2, 250, 0.2);
+}
+
+.centered-block p {
+    font-size: 20px;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .brand {
+        margin-bottom: 10px;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin: 5px 0;
+        font-size: 16px;
+    }
+    .block {
+        flex-direction: column;
+    }
+    
+
+    .left-block, .right-block {
+        width: 100%;
+        max-width: none;
+        padding: 0;
+    }
+
+    .left-block p {
+        font-size: 20px;
+    }
+
+    .text h2 {
+        font-size: 30px;
+    }
+
+    .text p {
+        font-size: 16px;
+    }
+
+    .big-button {
+        font-size: 16px;
+    }
+
+    .grid-item {
+        font-size: 15px;
+    }
+
+    .right-block{
+        margin-top: 20px;
+    }
+}

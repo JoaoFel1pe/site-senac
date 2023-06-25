@@ -1,0 +1,54 @@
+h2{
+    text-shadow: 2px 2px 2px rgba(242, 2, 250, 0.2);
+}
+
+#content {
+    margin: 3% 5%;
+}
+
+#mais-temas {
+    text-align: center;
+}
+
+.mensagem {
+    color: var(--fonte);
+    text-shadow: 2px 2px 2px rgba(242, 2, 250, 0.2);
+    font-size: 30px;
+}
+
+.temas{
+    margin-top: 20px;
+
+}
+.temas button{
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+.linha {
+    margin: 80px;
+    text-align: center;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid var(--roxo-escuro);
+    width: 40%;
+    margin: 20px auto;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  nav a:hover{
+    height: 50px;
+  }
+  
+
+@media only screen and (max-width: 600px) {
+    .mensagem {
+        font-size: 25px;
+    }
+    
+}

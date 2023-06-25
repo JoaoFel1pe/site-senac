@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chaves</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="SHORTCUT ICON" href="/utils/image/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles/landing-page.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/botoes.css">
+
+    <style>
+        .container {
+            margin: 5%;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            color: var(--roxo-claro);
+            text-shadow: 2px 2px 2px rgba(242, 2, 250, 0.2);
+        }
+    </style>
+
+    <title>O que são as chaves?</title>
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <div>Pro<span class="roxo-escuro">You</span></div>
+            <div><img class="logo" src="/utils/image/logo.png" alt="logo"></div>
+        </div>
+        <nav>
+            <a href="/pages/geral/landing-page.html"><button class="register-button">Voltar</button></a>
+        </nav>
+    </header>
+    <h1>Como Funcionam nossas chaves?</h1>
+    <div class="container">
+        
+        <br>
+        <p>
+            <h2>O que são chaves criptográficas?</h2>
+            <p>As chaves criptográficas são elementos essenciais em sistemas de criptografia. Elas são utilizadas para garantir a confidencialidade, integridade e autenticidade dos dados transmitidos e armazenados.</p>
+            <br>
+            <h2>Tipos de chaves criptográficas</h2>
+            <ul>
+                <li>Chave simétrica</li>
+                <li>Chave assimétrica</li>
+                <li>Hash</li>
+            </ul>
+            <br>
+
+            <h2>Chave simétrica</h2>
+            <p>A chave simétrica, também conhecida como chave de criptografia convencional, utiliza a mesma chave para criptografar e descriptografar os dados. Ambas as partes envolvidas na comunicação precisam compartilhar a mesma chave de forma segura.</p>
+            <br>
+            <h2>Chave assimétrica</h2>
+            <p>A chave assimétrica, também chamada de chave pública/privada, utiliza um par de chaves: uma pública e outra privada. A chave pública é compartilhada amplamente, enquanto a chave privada é mantida em segredo. Elas são utilizadas para criptografar e descriptografar os dados de forma segura.</p>
+            <br>
+            <h2>Hash</h2>
+            <p>O hash é um valor resultante de um algoritmo de hash aplicado a um conjunto de dados. Ele é usado para verificar a integridade dos dados e garantir que eles não tenham sido modificados durante a transmissão ou armazenamento.</p>
+            <br>
+
+            <h2>Como a ProYou usa as chaves?</h2>
+            <h3>Funcionário</h3>
+            <p>Quando um funcionário se cadastra no site, ele recebe uma chave única. Essa chave está associada ao ID da empresa. Com essa chave, o funcionário pode enviar reclamações de forma anônima para o RH da empresa.</p>
+
+            <h3>Empresa</h3>
+            <p>A empresa possui um ID único. Através desse ID, ela consegue visualizar quais chaves estão associadas a ela e identificar as reclamações enviadas pelos funcionários.</p>
+
+            <h3>Fluxo do Sistema</h3>
+            <ol>
+                <li>O funcionário se cadastra no ProYou.</li>
+                <li>Após o cadastro, o funcionário recebe uma chave única.</li>
+                <li>O funcionário utiliza a chave para enviar uma reclamação para o RH da empresa de forma anônima.</li>
+                <li>A empresa utiliza seu ID para visualizar as chaves associadas a ela.</li>
+                <li>A empresa pode acessar as reclamações enviadas pelos funcionários utilizando as chaves correspondentes.</li>
+            </ol>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+a {
+    color: var(--font);
+    text-decoration: none;
+}
+
+.buttons{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.login-button,
+.register-button,
+.send-button {
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--roxo-claro);
+    color: var(--background );
+    cursor: pointer;
+    font-weight: bolder;
+    font-family: Sora;
+}
+
+.login-button,
+.send-button {
+    background: var(--roxo-escuro);
+    color: var(--font);
+}
+
+

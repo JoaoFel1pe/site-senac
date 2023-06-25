@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="SHORTCUT ICON" href="/utils/image/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles/login-empresa.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/botoes.css">
+    <script>
+        function validarLogin() {
+            var login = document.getElementById("chave").value;
+            var senha = document.getElementById("senha").value;
+
+            if (login === "propig1" && senha === "123") {
+                window.location.href = "home-empresa.html";
+            } else {
+                alert("Login inválido!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <div>Pro<span class="roxo-escuro">You</span></div>
+            <div><img class="logo" src="/utils/image/logo.png" alt="logo"></div>
+            
+        </div>
+        <nav>
+            <a href="/pages/geral/landing-page.html"><button class="register-button">Voltar</button></a>
+        </nav>
+    </header>
+
+    <div class="login-form">
+        <div class="form-row">
+            <div class="login-text">
+                Não tem segredo! 
+                Digite o ID da empresa e a senha. Após isso, clique em <span class="roxo-claro">Entrar</span>.
+            </div>
+            <div class="input-container">
+                <input type="text" id="chave" placeholder="Digite seu ID" maxlength="7">
+            </div>
+            <div class="input-container">
+                <input type="password" id="senha" placeholder="Digite sua senha">
+            </div>
+            <div class="button-container">
+                <button type="submit" class="send-button" onclick="validarLogin()">Entrar</button>
+            </div>
+        </div>
+    </div>
+        
+    <footer>
+        <div class="mensagem">
+            <p>Para cadastrar sua empresa no Pro<span class="roxo-escuro">You</span>, entre em contato conosco <br> por algum de nossos canais</p>
+            <div class="item">
+                <div class="numero">
+                    <img src="/utils/image/whatsapp.png" style="width: 20px; height: 20px;" alt=""><p>+55 (81) 99999-9999</p>
+                </div>
+                <div class="email">
+                    <img src="/utils/image/gmail.png" style="width: 20px; height: 20px;" alt=""><p>proyou@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

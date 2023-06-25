@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="SHORTCUT ICON" href="/utils/image/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles/login-cliente.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/botoes.css">
+    <script>
+        function validarLogin() {
+            var login = document.getElementById("chave").value;
+
+            if (login === "joao1") {
+                window.location.href = "home-cliente.html";
+            } else {
+                alert("Login inválido!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <div>Pro<span class="roxo-escuro">You</span></div>
+            <div><img class="logo" src="/utils/image/logo.png" alt="logo"></div>
+        </div>
+        <nav>
+            <a href="/pages/geral/landing-page.html"><button class="register-button">Voltar</button></a>
+        </nav>
+    </header>
+
+    <div class="login-form">
+        <div class="form-row">
+            <div class="login-text">
+                Não tem segredo! <br> Digite sua chave e faça o <u>Login</u>
+            </div>
+            <div class="input-container">
+                <input type="text" id="chave" placeholder="Digite sua chave" maxlength="5">
+            </div>
+            <div class="button-container">
+                <button type="submit" class="send-button" onclick="validarLogin()">Entrar</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

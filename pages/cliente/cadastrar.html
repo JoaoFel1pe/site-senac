@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro</title>
+    <link rel="SHORTCUT ICON" href="/utils/image/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles/login-cliente.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/botoes.css">
+    <script>
+        function validarLogin() {
+            var id = document.getElementById("chave").value;
+
+            if (id === "propig1") {
+                alert("Sua chave é: joao1");
+                window.location.href = "home-cliente.html";
+            } else {
+                alert("ID inválido!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <div>Pro<span class="roxo-escuro">You</span></div>
+            <div><img class="logo" src="/utils/image/logo.png" alt="logo"></div>
+        </div>
+        <nav>
+            <a href="/pages/geral/landing-page.html"><button class="login-button">Voltar</button></a>
+        </nav>
+    </header>
+
+    <div class="login-form">
+        <div class="form-row">
+            <div class="login-text" style="color: var(--fonte); text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.192);">
+                Seja Bem-Vindo!
+                Para efetuar o cadastro e gerarmos sua chave, você vai  precisar informar o ID que sua empresa lhe disponibilizou
+            </div>
+            <div class="input-container">
+                <input type="text" id="chave" placeholder="Digite o ID" maxlength="7">
+            </div>
+            <div class="button-container">
+                <button type="submit" class="register-button" onclick="validarLogin()">Cadastrar</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

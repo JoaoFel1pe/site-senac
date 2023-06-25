@@ -1,107 +1,6 @@
-:root {
-    --background: #091c36;
-    --fonte: #f4f9f7;
-    --roxo-claro: #d6a8ff;
-    --roxo-escuro: #af53ff;
-}
+/* Relato */
 
-* {
-    margin: 0;
-    padding: 0;
-    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;;
-}
-
-body {
-    height: 100vh;
-    background-color: var(--background);
-    min-width: 50vw;
-}
-
-
-.mensagem {
-    color: var(--fonte);
-    width: 50vw;
-    margin-top: 1%;
-    text-shadow: 2px 2px 5px rgba(241, 241, 241, 0.4);
-}
-
-.welcome {
-    font-size: 50px;
-    font-weight: bold;
-    color: var(--roxo-escuro);
-}
-
-.intro {
-    margin-top: 3%;
-    margin-right: 5%;
-    font-size: 25px;
-}
-
-.corpo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    margin: 3%;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    width: 60w;
-    margin-left: 5%;
-  }
-  
-.grid-item {
-    padding: 35px;
-    margin: 10px;
-    background-color: var(--roxo-claro);
-    border-radius: 10px;
-    color: var(--background);
-    font-weight: 800;
-    border: none;
-    font-size: 25px;
-    
-}
-
-.grid-item:hover {
-    cursor: pointer;
-    transform: scale(0.95) translateY(0%);
-    transition: all ease-in-out 0.2s;
-    background: var(--roxo-escuro);
-    
-}
-
-.relate {
-    
-    height: 100px;
-    margin-left: 3%;
-    margin-top: 2%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-  }
-
-.texto-relate{
-    font-size: 40px;
-    color: var(--fonte);
-    font-weight: bold;
-    text-shadow: 2px 2px 5px rgba(241, 241, 241, 0.4);
-}
-
-
-
-.btn-conteiner {
-    display: flex;
-    margin-left: 15%;
-    justify-content: center;
-    --color-text: var(--fonte);
-    --color-background: var(--roxo-escuro);
-    --color-outline: #ff145b80;
-    --color-shadow: #00000080;
-  }
-  
-  .btn-content {
+.btn-content {
     display: flex;
     align-items: center;
     padding: 5px 30px;
@@ -201,4 +100,94 @@ body {
 
 .escuro {
     color: var(--roxo-escuro);
+}
+
+
+.Btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: var(--roxo-escuro);
+}
+
+/* plus sign */
+.sign {
+  width: 100%;
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign svg {
+  width: 17px;
+}
+
+.sign svg path {
+  fill: white;
+}
+
+/* text */
+.text {
+  padding-top: 0px;
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition-duration: .3s;
+}
+
+/* hover effect on button width */
+.Btn:hover {
+  width: 125px;
+  border-radius: 40px;
+  transition-duration: .3s;
+}
+
+.Btn:hover .sign {
+  width: 30%;
+  transition-duration: .3s;
+  padding-left: 20px;
+}
+
+/* hover effect button's text */
+.Btn:hover .text {
+  opacity: 1;
+  width: 70%;
+  transition-duration: .3s;
+  padding-right: 10px;
+}
+
+/* button click effect*/
+.Btn:active {
+  transform: translate(2px ,2px);
+}
+
+/* Regras de mídia para telas menores */
+@media screen and (max-width: 600px) {
+  .Btn {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .sign svg {
+    width: 14px;
+  }
+  
+  .text {
+    font-size: 1em;
+    padding-top: 12px;
+  }
 }

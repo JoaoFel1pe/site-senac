@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coverse com nossa IA</title>
+    <link rel="SHORTCUT ICON" href="/utils/image/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles/inicio.css">
+    <link rel="stylesheet" href="/styles/converse-ia.css">
+    <link rel="stylesheet" href="/styles/sobre-o-projeto.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/botoes.css">
+    <link rel="stylesheet" href="/styles/botoes-complexos.css">
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <a href="/pages/cliente/home-cliente.html">
+                <div>
+                Pro<span class="roxo-escuro">You</span>
+                </div>
+            </a>
+
+            <a href="/pages/cliente/home-cliente.html">
+                <div>
+                    <img class="logo" src="/utils/image/logo.png" alt="logo">
+                </div>
+            </a>
+        </div>
+        <nav>
+            <a href="/pages/cliente/converse-com-ia.html">Converse com nossa <span class="roxo-claro">IA</span></a>
+            <a href="/pages/cliente/sobre-o-projeto.html">Sobre o projeto</a>
+            <a href="#">Chave Atual:<span class="roxo-claro"> joao1</span></a>
+            <a href="/pages/geral/landing-page.html"><button class="Btn">
+  
+  <div class="sign"><svg viewBox="0 0 512 512"><path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path></svg></div>
+  
+  <div class="text">Sair</div>
+</button></a>
+            <script src="/js/chat-interface.js"></script>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="chat-container">
+            <div class="chat-header">
+                <h1>Bem-vindo ao Nymus!</h1>
+            </div>
+            <div class="chat-body" id="chat-body">
+                <div class="message received">
+                    <img src="/utils/image/logo.png" alt="" style="width: 20px; height: 20px;">
+                    <p> Olá! Como posso ajudar?</p>
+                    <br>
+                </div>
+                <div class="message sent">
+                    Olá! Sinto que estou sendo vitima de assédio moral. <br>Como devo proceder?
+                </div>
+                <br>
+                <div class="resposta">
+                    <div class="mensagem-resposta">
+                        <img src="/utils/image/logo.png" alt="" style="width: 20px; height: 20px;">
+                        <p>Sinto muito. Posso dar algumas dicas de como lidar com essa situação:</p>
+                    </div>
+                    <div>
+                        <ol>
+                            <li>Reconheça os sinais: Esteja atento aos comportamentos inadequados, como humilhação, intimidação, ameaças, discriminação ou críticas constantes e injustas.</li>
+                            <li>Documente evidências: Anote datas, horários, locais e descrições detalhadas dos incidentes de assédio moral. Isso ajudará a fortalecer sua posição se você decidir tomar medidas mais formais.</li>
+                            <li>Fale com alguém de confiança: Compartilhe suas preocupações com um colega de confiança, amigo, membro da família ou um profissional de recursos humanos em quem você possa confiar.</li>
+                            <li>Conheça a política da empresa: Familiarize-se com as políticas da empresa em relação ao assédio moral. Procure o código de conduta ou o manual do funcionário para entender os procedimentos apropriados a serem seguidos.</li>
+                            <li>Reporte a situação: Formalize sua queixa seguindo os procedimentos estabelecidos pela empresa. Entre em contato com o departamento de recursos humanos ou com a pessoa designada para lidar com questões relacionadas ao assédio.</li>
+                            <li>Busque apoio legal: Se as medidas internas não resolverem a situação ou se você sofrer retaliação, consulte um advogado especializado em questões de assédio moral para orientação legal e proteção dos seus direitos.</li>
+                            <li>Cuide do seu bem-estar: Priorize sua saúde mental e emocional. Procure apoio de um profissional de saúde, como um psicólogo ou terapeuta, para ajudar a lidar com o impacto do assédio moral.</li>
+                          </ol>
+                          
+                    </div>
+                </div>
+            </div>
+            <div class="chat-footer">
+                <input type="text" id="user-input" placeholder="Digite sua mensagem..." />
+                <button id="send-button">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>
