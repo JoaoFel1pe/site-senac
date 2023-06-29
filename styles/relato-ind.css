@@ -1,0 +1,20 @@
+.container {
+    margin-top: 7%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.relato {
+    padding: 30px 50px;
+    display: block;
+    border-radius: 20px;
+    width: 50%;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: justify;
+    background-color: #9326f35d;
+    border: 2px solid var(--fonte);
+}
